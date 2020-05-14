@@ -3,9 +3,9 @@
 window.addEventListener("load", function () {
   function getSortOrder(hoursInSpace) {
     return function (a, b) {
-      if (a[hoursInSpace] > b[hoursInSpace]) {
+      if (a[hoursInSpace] < b[hoursInSpace]) {
         return 1;
-      } else if (a[hoursInSpace] < b[hoursInSpace]) {
+      } else if (a[hoursInSpace] > b[hoursInSpace]) {
         return -1;
       }
       return 0;
